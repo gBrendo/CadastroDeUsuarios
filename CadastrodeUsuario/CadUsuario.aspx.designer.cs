@@ -24,6 +24,15 @@ namespace CadastrodeUsuario
         protected global::System.Web.UI.WebControls.Label lbltotal;
 
         /// <summary>
+        /// lblmensagem control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblmensagem;
+
+        /// <summary>
         /// txtNome control.
         /// </summary>
         /// <remarks>
@@ -42,15 +51,6 @@ namespace CadastrodeUsuario
         protected global::System.Web.UI.WebControls.TextBox txtNascimento;
 
         /// <summary>
-        /// cbAtivo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox cbAtivo;
-
-        /// <summary>
         /// txtTelefone control.
         /// </summary>
         /// <remarks>
@@ -58,6 +58,15 @@ namespace CadastrodeUsuario
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTelefone;
+
+        /// <summary>
+        /// cbAtivo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbAtivo;
 
         /// <summary>
         /// btnSalvar control.

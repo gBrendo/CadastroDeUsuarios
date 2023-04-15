@@ -14,12 +14,10 @@ namespace CadastrodeUsuario
         protected void Page_Load(object sender, EventArgs e)
         {
             banco = new Contexto();
-            int usuariosCadastrados = banco.Usuarios.Count();
-            lbltotal.Text=usuariosCadastrados.ToString();
-
-           
-
-           
+            if (!IsPostBack)
+            {
+                ExibirTotal();
+            }
         }
 
         protected void btnSalvar_Click(object sender, EventArgs e)
@@ -34,8 +32,9 @@ namespace CadastrodeUsuario
 
             banco.Add(usuario);
             banco.SaveChanges();
-            Response.Write("Usuario salvo com sucesso.");
 
+            lblmensagem.Text = "Usuário salvo com sucesso";
+            ExibirTotal();
 
         }
 
@@ -45,6 +44,12 @@ namespace CadastrodeUsuario
             txtTelefone.Text = string.Empty;
             txtNascimento.Text = string.Empty;
             cbAtivo.Checked = false;
+        }
+
+        public void ExibirTotal()
+        {
+            int usuariosCadastrados = banco.Usuarios.Count();
+            lbltotal.Text = usuariosCadastrados.ToString();
         }
     }
 }
