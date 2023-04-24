@@ -18,6 +18,18 @@ namespace CadastrodeUsuario.Modelo
 
         public string Telefone { get; set; }
 
+        public static List<Usuario> Lista = new List<Usuario>();
+
+        public List<Usuario> Todos()
+        {
+            return Usuario.Lista;
+        }
+
+        public void Salvar()
+        {
+            Usuario.Lista.Add(this);
+        }
+
         public bool Ativo { get; set; }
 
     }
